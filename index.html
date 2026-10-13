@@ -173,17 +173,19 @@
 
         /* ホットスポットのデザイン */
         #hotspot-safe, #hotspot-tutorial-box {
-            top: 140px !important;    
-            left: 550px !important;   
-            width: 100px !important;  
-            height: 120px !important; 
-            background-image: url('images/safe.png') !important; 
-            background-size: 100% 100% !important;
-            background-color: transparent !important;
-            border: none !important;
-            position: absolute;
-            z-index: 7 !important;
-        }
+    top: auto !important;
+    bottom: 20px !important;    /* 画面下部からの距離（お好みで調整可） */
+    left: 50% !important;       /* 水平方向の中央に配置 */
+    transform: translateX(-50%) !important; /* 中央寄せの微調整 */
+    width: 100px !important;  
+    height: 120px !important; 
+    background-image: url('images/safe.png') !important; 
+    background-size: 100% 100% !important;
+    background-color: transparent !important;
+    border: none !important;
+    position: absolute;
+    z-index: 7 !important;
+}
         #hotspot-hollow {
             top: 85px !important;    
             left: 505px !important;   
